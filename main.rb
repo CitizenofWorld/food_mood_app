@@ -104,10 +104,15 @@ get '/favorites' do
 end
 
 
-# <%= if @count > 0 %> 
-# 	<div class="counter"> <%= @count.count %> </div>
-# 	<% end %>
-# <% end %>
+delete '/likes/:id' do
+	redirect '/login' unless logged_in?
+	@like = Like.find(params[:id])
+	@like.destroy
+	redirect '/favorites'
+end 
+
+
+
 
 
 

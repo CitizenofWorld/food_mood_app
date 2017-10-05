@@ -8,4 +8,14 @@
 		<li class="fav-li"> <a href="<%= like.recipe_url %>">Go to Recipe </a> </li>
 	</ul>
 
+		<% if session[:user_id] %>
+			<div class="delete-form">
+				<form action="/likes/<%= like.id %>" method = "post" >
+					<input type ="hidden" name ="_method" value ="DELETE"> 
+					<button class="delete" type="submit">DELETE</button>
+				</form>
+			</div>
+	  <%end%>
+
 <% end %>
+

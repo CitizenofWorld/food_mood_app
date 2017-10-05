@@ -121,6 +121,7 @@ nav{
   list-style: none;
   border: 1px solid black;
   margin-top: 25px;
+  padding-bottom: 25px;
 }
 
 .fav-image{
@@ -134,6 +135,11 @@ nav{
 .fav-h1{
 	margin: 0 auto;
   text-align: center;
+}
+
+.delete-form{
+	width: 5%;
+  margin: 0 auto;
 }
 
 
