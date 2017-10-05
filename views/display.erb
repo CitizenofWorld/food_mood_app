@@ -1,32 +1,24 @@
+<h1 class="display-h1"> Because you're <%= @mood.name %> try these recipes </h1>
+
 <% @recipes.each do |recipe| %>
 
-<% @moods.each do |mood| %>
-	<%if recipe.mood_id ==  mood.id %>
-		<h1 class="display-h1"> Because you're <%= mood.name %> try these recipes! </h1>
-	<% end %>
-<% end %>
-</h1>
-
-
-<div>
-	<ul class="display-ul">
+	<div>
+		<ul class="display-ul">
 			<li class="display-li"> <img class="display-image" src="<%= recipe.image_url %>"> </li>
 			<div class="info-container">
 				<li class="display-li"> <%= recipe.name %> </li>
 				<li class="display-li"> <a href="<%= recipe.recipe_url %>">Go to Recipe </a></li>
 
-<form action="/likes" method="post">
-  <input type="hidden" name="recipe_id" value="<%= recipe.id %>">
-  <input type="hidden" name="recipe_url" value="<%= recipe.recipe_url %>">
-  <input type="hidden" name="image_url" value="<%= recipe.image_url %>">
-  <input type="hidden" name="recipe_name" value="<%= recipe.name %>">
-  <input type="hidden" name="color" value="<%= params[:color] %>">
-  <input type="hidden" name="mood" value="<%= Mood.where( {id:recipe.mood_id}) %>">
-  <input type="hidden" name="user_id" value="<%= current_user.id %>">
-	<li class="display-li"> <button>Like</button> <%= Like.where(recipe_id: recipe.id).count %> </li>
-	</ul>
-</form>
+				<form action="/likes" method="post">
+				  <input type="hidden" name="recipe_id" value="<%= recipe.id %>">
+				  <input type="hidden" name="recipe_url" value="<%= recipe.recipe_url %>">
+				  <input type="hidden" name="image_url" value="<%= recipe.image_url %>">
+				  <input type="hidden" name="recipe_name" value="<%= recipe.name %>">
+				  <input type="hidden" name="color" value="<%= @color %>">
+					<li class="display-li"> <button>Like</button> <%= recipe.likes.count %> </li>
+				</form>
 			</div>
-</div>
+		</ul>
+	</div>
 
 <% end %> 

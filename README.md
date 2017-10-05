@@ -10,4 +10,4 @@ Many of us decide what to eat based on the mood we are in.  This app will help y
 
 
 
-Food Mood is [on Heroku](https://git.heroku.com/mood-recipe.git)
+Food Mood is [on Heroku](https://mood-recipe.herokuapp.com/)
