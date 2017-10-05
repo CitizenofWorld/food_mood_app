@@ -1,0 +1,13 @@
+<% if logged_in? %>
+<h1>Welcome <%= current_user.name %></h1> 
+<% end %> 
+<h1>WHAT MOOD ARE YOU IN?</h1>
+
+<form action="/mood" method="get">
+	<button name="color" value="yellow" type="submit">Happy</button>
+	<button name="color" value="red" type="submit">Romantic</button>
+	<button name="color" value="green" type="submit">Angry</button>
+	<button name="color" value="blue" type="submit">Relaxed</button>
+	<button name="color" value="black" type="submit">Sad</button>
+	<button name="color" value="orange" type="submit">Stressed</button>
+</form>

@@ -1,0 +1,14 @@
+<h1> <%= current_user.name %>'s Favourites</h1>
+
+<% @likes.each do |like| %>
+	<ul>
+		<li>
+			<%= like.recipe_name %>
+			<img src="<%= like.image_url %>">
+			<a href="<%= like.recipe_url %>">Go to Recipe </a>
+		</li>
+	</ul>
+
+
+
+<% end %>

@@ -1,0 +1,13 @@
+<h1>Login</h1>
+<%= @message %>
+<form action="/session" method="post">
+	<label for="">email</label>
+	<input name="email" type="text">
+
+	<label for="">password</label>
+	<input type="password" name="password">
+
+	<button>login</button>
+</form>
+
+<a href="/create"> Click to create a new user</a>

@@ -1,0 +1,31 @@
+
+<% @recipes.each do |recipe| %>
+
+	<ul>
+		<li>
+			<%= recipe.name %>
+			<img src="<%= recipe.image_url %>">
+			<a href="<%= recipe.recipe_url %>">Go to Recipe </a>
+		</li>
+	</ul>
+
+<form action="/likes" method="post">
+  <input type="hidden" name="recipe_id" value="<%= recipe.id %>">
+  <input type="hidden" name="recipe_url" value="<%= recipe.recipe_url %>">
+  <input type="hidden" name="image_url" value="<%= recipe.image_url %>">
+  <input type="hidden" name="recipe_name" value="<%= recipe.name %>">
+  <input type="hidden" name="color" value="<%= params[:color] %>">
+  <input type="hidden" name="user_id" value="<%= current_user.id %>">
+	<button>Like</button> 
+	<div class="counter"> 
+	<% @likes.each do |like| %>
+		<% if @likes_recipe_id == @recipe_id %>
+				<% count = 0 %>
+				<% count += 1 %>
+	<% end %>
+<% count %>
+
+	</div>
+</form>
+
+<% end %> 
