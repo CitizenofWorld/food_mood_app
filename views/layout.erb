@@ -3,24 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
 <nav>
-	<ul>
-		<li>
-			<a href="/">Home</a>
-		</li>
-		<li>
-			<a href="/choice">Moods</a>
-		</li>
-		<li>
+	<ul class="nav-ul">
+		<li class="nav-li">
+			<a class="nav-a" href="/">Home</a>
+			<a class="nav-a" href="/choice">Moods</a>
 		  <% if logged_in? %>
-			  <a href="/favorites">Favorites</a>
+			  <a class="nav-a" href="/favorites">Favorites</a>
 			<% end %>
 		</li>
 	</ul>
-</nav>d
+</nav>
 	<% if logged_in? %>
 	  logged in as <%= current_user.email %>
 	  <form action="session" method="post">
@@ -30,5 +26,8 @@
 	<% end %>
 
 	<%= yield %>
+	<script src="/main.js">
+
+	</script>
 </body>
 </html>

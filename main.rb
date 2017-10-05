@@ -1,5 +1,5 @@
 require 'sinatra'
-# require 'sinatra/reloader'
+require 'sinatra/reloader'
 require 'pry'
 require_relative 'db_config'
 require_relative 'models/mood'
@@ -93,9 +93,11 @@ end
 
 get '/mood' do
 	@likes = Like.all
-	@like_recipe_id = Like.recipe_id
-	@recipe_id = params[:recipe_id]
-	#@count = Like.where(recipe_id: recipe_id).count
+	@moods = Mood.all
+	@mood_name = params[:name]
+	#@like_recipe_id = Like.recipe_id
+	recipe_id = params[:recipe_id]
+	
   color = params[:color]
   mood = Mood.find_by(color: color)
   @recipes = Recipe.where(mood: mood)

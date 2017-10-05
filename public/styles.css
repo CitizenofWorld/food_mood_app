@@ -1,0 +1,142 @@
+/*body {
+	background-color: #f2f2f2;
+}
+*/
+.label-main {
+	width: 25%;
+  margin: 0 auto;
+}
+
+.login-container{
+	text-align: center;
+}
+
+.login-button{
+	font-size: 15px;
+  margin: 6px;
+
+}
+
+.mood-container {
+	width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.counter {
+  border: 1px solid black;
+  width: 2%;
+  text-align: center;
+}
+
+nav{
+	background-color: black;
+}
+
+.nav-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-li .nav-a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #111;
+  cursor: pointer;
+}
+
+.color-button {
+	font-size: 45px;
+  border-radius: 60px;
+  padding: 25px;
+  margin: 10px;
+}
+
+.yellow {
+	background-color: yellow;
+	cursor: pointer;
+}
+
+.red {
+	background-color: red;
+	cursor: pointer;
+}
+
+.blue{
+	background-color: blue;
+	cursor: pointer;
+}
+
+.black{
+	background-color: black;
+	cursor: pointer;
+	color: white;
+}
+
+.green{
+	background-color: green;
+	cursor: pointer;
+}
+
+.orange{
+	background-color: orange;
+	cursor: pointer;
+
+}
+
+.display-ul{
+	width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.info-container{
+	margin: 9px;
+}
+
+.display-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.display-h1{
+	text-align: center;
+}
+
+.fav-ul{
+	width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.fav-image{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.fav-h1{
+	margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+

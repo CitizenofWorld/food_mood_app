@@ -1,13 +1,25 @@
-<h1>Login</h1>
-<%= @message %>
-<form action="/session" method="post">
-	<label for="">email</label>
-	<input name="email" type="text">
 
-	<label for="">password</label>
-	<input type="password" name="password">
+<div class="login-container">
+	<h1>Login</h1>
+	<%= @message %>
+	<form action="/session" method="post">
+	<div class="label-main">
 
-	<button>login</button>
-</form>
+				<label class="email" for="">Email:</label>
+			<div class="label-container">
+				<input name="email" type="text">
+			</div>
 
-<a href="/create"> Click to create a new user</a>
+				<label class="password" for="">Password:</label>
+			<div class="label-container">
+				<input type="password" name="password">
+			</div>
+
+		</div>
+
+		<div class="login-button"> <button>login</button> </div>
+	</form>
+	<div>
+		<a href="/create"> Click to create a new user</a>
+	</div>
+</div>

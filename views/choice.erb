@@ -1,13 +1,16 @@
+
+<div class="mood-container">
 <% if logged_in? %>
 <h1>Welcome <%= current_user.name %></h1> 
 <% end %> 
-<h1>WHAT MOOD ARE YOU IN?</h1>
+<h1 class="mood-h1">WHAT MOOD ARE YOU IN?</h1>
 
-<form action="/mood" method="get">
-	<button name="color" value="yellow" type="submit">Happy</button>
-	<button name="color" value="red" type="submit">Romantic</button>
-	<button name="color" value="green" type="submit">Angry</button>
-	<button name="color" value="blue" type="submit">Relaxed</button>
-	<button name="color" value="black" type="submit">Sad</button>
-	<button name="color" value="orange" type="submit">Stressed</button>
+<form class="button-form" action="/mood" method="get">
+	<button class="color-button yellow" name="color" value="yellow" type="submit" onclick="yellowChange()">Happy</button>
+	<button id="red" class="color-button red" name="color" value="red" type="submit">Romantic</button>
+	<button id="green" class="color-button green" name="color" value="green" type="submit">Angry</button>
+	<button id="blue" class="color-button blue" name="color" value="blue" type="submit">Relaxed</button>
+	<button id="black" class="color-button black" name="color" value="black" type="submit">Sad</button>
+	<button id="orange" class="color-button orange" name="color" value="orange" type="submit">Stressed</button>
 </form>
+</div>
