@@ -1,6 +1,6 @@
 # Welcome to Food Mood
 
-Many times it is difficult to decide what to cook for dinner.  This uaually leads to ordering take out food.  If the decision making process was made simple a person may be more likely to cook a meal at home.  Many of us decide what to eat based on the mood we are in.  This app will help you decide what recipe to cook depending on the mood you are in. When you like a recipe it will be saved to your favourites page.
+Many times it is difficult to decide what to cook for dinner.  This usually leads to ordering take out food.  If the decision making process was made simple a person may be more likely to cook a meal at home.  Many of us decide what to eat based on the mood we are in.  This app will help you decide what recipe to cook depending on the mood you are in. When you like a recipe it will be saved to your favourites page.
 
 ## Technologies Used
  * The app contains a psql database
